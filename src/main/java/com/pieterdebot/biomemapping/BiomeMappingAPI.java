@@ -74,16 +74,6 @@ public class BiomeMappingAPI implements VersionWrapper{
                 return new Wrapper_1_14_R1();
             case v1_15_R1:
                 return new Wrapper_1_15_R1();
-            case v1_16_R1:
-                return new Wrapper_1_16_R1();
-            case v1_16_R2:
-                return new Wrapper_1_16_R2();
-            case v1_16_R3:
-                return new Wrapper_1_16_R3();
-            case v1_17_R1:
-                return new Wrapper_1_17_R1();
-            case v1_18_R1:
-                return new Wrapper_1_18_R1();
         }
 
         throw new RuntimeException("Version " + version + " is not supported!");
