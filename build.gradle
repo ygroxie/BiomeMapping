@@ -13,6 +13,25 @@ buildscript {
     }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            group = pluginGroup
+            version = pluginVersion
+            artifactId = 'biomemapping'  // Nom de ton artefact
+        }
+    }
+
+    repositories {
+        maven {
+            name = "JitPack"
+            url = uri("https://jitpack.io")
+        }
+    }
+}
+
 allprojects {
     apply plugin: 'java'
     apply plugin: 'maven-publish'
